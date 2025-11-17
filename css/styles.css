@@ -1,3 +1,6 @@
+/* переменные */
+@import "variables.css";
+@import "colors.css";
 /* глобальные стили */
 @import "globalStyles.css";
 
@@ -13,3 +16,5 @@
 @import "blocks/sections/interior.css";
 @import "blocks/sections/reviews.css";
 @import "blocks/sections/reservation.css";
+/* шрифты */
+@import "fonts.css";
