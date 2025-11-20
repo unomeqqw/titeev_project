@@ -18,3 +18,7 @@
 @import "blocks/sections/reservation.css";
 /* шрифты */
 @import "fonts.css";
+/* Блоки */
+@import "blocks/body.css";
+@import "blocks/hamburger.css";
+@import "blocks/nav-list.css";
