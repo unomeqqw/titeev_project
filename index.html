@@ -1,153 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Landing</title>
-    <!-- favicon -->
+    
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/normalize.css" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- scripts -->
-    <script src="js/slider-reviews.js" defer></script>
-    <script src="js/collage.js" defer></script>
+    
+    <!-- Scripts -->
     <script src="js/menu.js" defer></script>
     <script src="js/header.js" defer></script>
+    <script src="js/slider-reviews.js" defer></script>
+    <script src="js/collage.js" defer></script>
 </head>
 <body class="body">
-    <header class="js-body__header body__header header"></header>
-    <header class="body__header header">
-        <a class="header__logo-container" href="/">
-        <div class="header__logo">
-        <img src="img/logo/logo-mario.svg" alt="СЫТЫЙ МАРИО логотип" />
-    </div>
-    <p class="header__logo-text">Сытый Марио</p>
-            <div class="header__logo">
-        <img src="img/logo/logo-mario.svg" alt="СЫТЫЙ МАРИО логотип" />
-    </div>
-    </a>
-        <!-- contacts -->
-    <div class="header__contacts-container">
-    <!-- contacts -->
-    <div class="header__contacts-container">
-    <a class="header__telephone" href="tel:88005553535">
-    <div class="header__telephone-back"></div>
-    <span class="header__telephone-text">8-800-555-35-35</span>
-    </a>
-    <a class="header__address" href="https://yandex.ru/maps/-/CDbHA0ky">
-    <div class="header__address-back"></div>
-    <span class="header__address-text">Москва, ул. Ленина, д11</span>
-    </a>
-</div>
-<!-- navigation -->
-<nav class="header__nav">
-<ul class="js-nav-list nav-list nav-list_hided">
-</ul>
-<li class="js-nav-list__item nav-list__item">
-  <a class="nav-list__item-link" href="#cover">Главная</a>
-  <div class="nav-list__item-back nav-list__item-back_1"></div>
-</li>
-<li class="js-nav-list__item nav-list__item">
-  <a class="nav-list__item-link" href="#menu">Меню</a>
-  <div class="nav-list__item-back nav-list__item-back_2"></div>
-</li>
-<li class="js-nav-list__item nav-list__item">
-  <a class="nav-list__item-link" href="#chips">Фишечки</a>
-  <div class="nav-list__item-back nav-list__item-back_3"></div>
-</li>
-<li class="js-nav-list__item nav-list__item">
-  <a class="nav-list__item-link" href="#interior">Интерьер</a>
-  <div class="nav-list__item-back nav-list__item-back_4"></div>
-</li>
-<li class="js-nav-list__item nav-list__item">
-  <a class="nav-list__item-link" href="#reviews">Отзывы</a>
-  <div class="nav-list__item-back nav-list__item-back_5"></div>
-</li>
-</nav>
-<!-- burger -->
-<div class="js-hamburger header__hamburger hamburger">
-  <div class="hamburger__row"></div>
-  <div class="hamburger__row"></div>
-  <div class="hamburger__row"></div>
-</div>
-    </div>
-        <div class="header__container container"></div>
+    <header class="js-body__header body__header header shadow-out">
+        <div class="header__container container">
+            <a class="header__logo-container" href="/">
+                <div class="header__logo">
+                    <img src="img/logo/logo-mario.svg" alt="СЫТЫЙ MONOPOLIS логотип" />
+                </div>
+                <p class="header__logo-text">Сытый Марио</p>
+            </a>
+            <!-- contacts -->
+            <div class="header__contacts-container">
+                <a class="header__telephone" href="tel:88005553535">
+                    <div class="header__telephone-back"></div>
+                    <span class="header__telephone-text">8-800-555-35-35</span>
+                </a>
+                <a class="header__address" href="https://yandex.ru/maps/-/CDbHA0ky">
+                    <div class="header__address-back"></div>
+                    <span class="header__address-text">Москва, ул. Ленина, д11</span>
+                </a>
+            </div>
+        <!-- navigation -->
+        <nav class="header__nav">
+        <ul class="js-nav-list nav-list nav-list_hided">
+        <li class="js-nav-list__item nav-list__item">
+            <a class="nav-list__item-link" href="#cover">Главная</a>
+            <div class="nav-list__item-back nav-list__item-back_1"></div>
+        </li>
+        <li class="js-nav-list__item nav-list__item">
+            <a class="nav-list__item-link" href="#menu">Меню</a>
+            <div class="nav-list__item-back nav-list__item-back_2"></div>
+        </li>
+        <li class="js-nav-list__item nav-list__item">
+            <a class="nav-list__item-link" href="#chips">Фишечки</a>
+            <div class="nav-list__item-back nav-list__item-back_3"></div>
+        </li>
+        <li class="js-nav-list__item nav-list__item">
+            <a class="nav-list__item-link" href="#interior">Интерьер</a>
+            <div class="nav-list__item-back nav-list__item-back_4"></div>
+        </li>
+        <li class="js-nav-list__item nav-list__item">
+            <a class="nav-list__item-link" href="#reviews">Отзывы</a>
+            <div class="nav-list__item-back nav-list__item-back_5"></div>
+        </li>
+        </ul>
+        </nav>
+        <!-- burger -->
+        <div class="js-hamburger header__hamburger hamburger">
+            <div class="hamburger__row"></div>
+            <div class="hamburger__row"></div>
+            <div class="hamburger__row"></div>
+        </div>
+        </div>
     </header>
-
+    
     <main class="body__main main">
-
-        
+        <!-- cover -->
         <section id="cover" class="main__section cover">
             <div class="main__section-container container">
-                <header class="main__section-header">
-                    <h2 class="main__section-header-text">Главный экран</h2>
-                    <p class="main__section-text">Вводный блок</p>
-                </header>
-                <div class="main__section-block"></div>
             </div>
         </section>
 
-        
+        <!-- menu -->
         <section id="menu" class="main__section menu">
-            <div class="main__section-container container">
-                <div class="main__section-container main__section-container_reverse container"></div>
-                <header class="main__section-header">
+            <div class="main__section-container main__section-container_reverse container">
+                <header class="main__section-header menu__header">
                     <h2 class="main__section-header-text">Меню</h2>
-                    <p class="main__section-text">Наши блюда</p>
+                    <p class="main__section-text">Вкус просто сводит с ума (И это не лечится)</p>
                 </header>
-                <div class="main__section-block"></div>
+                <!-- block -->
+                <div class="main__section-block">
+                </div>
+                <!-- block -->
+                <div class="main__section-block menu__section-block">
+                    <ul class="menu__nav-list">
+                        <li class="js-menu__nav-item menu__nav-item" data-menu-list-id="0">Пицца</li>
+                        <li class="js-menu__nav-item menu__nav-item" data-menu-list-id="1">Салаты</li>
+                        <li class="js-menu__nav-item menu__nav-item" data-menu-list-id="2">Напитки</li>
+                    </ul>
+                    <div class="js-menu__menu-items-block menu__menu-items-block"></div>
+                </div>
             </div>
         </section>
 
-        
+        <!-- chips -->
         <section id="chips" class="main__section chips">
             <div class="main__section-container container">
                 <header class="main__section-header">
-                    <h2 class="main__section-header-text">Особенности</h2>
-                    <p class="main__section-text">Наши преимущества</p>
+                    <h2 class="main__section-header-text">Фишечки</h2>
+                    <p class="main__section-text">Чем мы лучше остальных? Чем-то то и лучше!</p>
                 </header>
-                <div class="main__section-block"></div>
+                <!-- block -->
+                <div class="main__section-block">
+                </div>
             </div>
         </section>
 
-        
+        <!-- interior -->
         <section id="interior" class="main__section interior">
-            <div class="main__section-container container">
-                <div class="main__section-container main__section-container_reverse container"></div>
+            <div class="main__section-container main__section-container_reverse container">
                 <header class="main__section-header">
                     <h2 class="main__section-header-text">Интерьер</h2>
-                    <p class="main__section-text">Атмосфера ресторана</p>
+                    <p class="main__section-text">При входе к нам вы просто упадете!<br>Мы не заделали дыру в полу под порогом</p>
                 </header>
-                <div class="main__section-block"></div>
+                <!-- block -->
+                <div class="main__section-block">
+                </div>
             </div>
         </section>
 
-        
+        <!-- reviews -->
         <section id="reviews" class="main__section reviews">
             <div class="main__section-container container">
                 <header class="main__section-header">
                     <h2 class="main__section-header-text">Отзывы</h2>
-                    <p class="main__section-text">Мнение гостей</p>
+                    <p class="main__section-text">Наши клиенты – лучшие... И их отзывы – прекрасны!</p>
                 </header>
-                <div class="main__section-block"></div>
+                <!-- block -->
+                <div class="main__section-block">
+                </div>
             </div>
         </section>
 
-        
+        <!-- reservation -->
         <section id="reservation" class="main__section reservation">
-            <div class="main__section-container container">
-                <div class="main__section-container main__section-container_reverse container"></div>
+            <div class="main__section-container main__section-container_reverse container">
                 <header class="main__section-header">
-                    <h2 class="main__section-header-text">Бронирование</h2>
-                    <p class="main__section-text">Забронируйте столик</p>
+                    <h2 class="main__section-header-text">Бронируйте!</h2>
+                    <p class="main__section-text">Вы ведь уже очарованы нашим рестораном...<br>Назад пути нет</p>
                 </header>
-                <div class="main__section-block"></div>
+                <!-- block -->
+                <div class="main__section-block">
+                </div>
             </div>
         </section>
-
     </main>
-
 </body>
 </html>
-
