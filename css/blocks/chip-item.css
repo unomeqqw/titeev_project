@@ -1,0 +1,52 @@
+.chip-item {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.chip-item:nth-child(1) {
+  margin-top: 0;
+}
+.chip-item__icon-container {
+  display: flex;
+  padding: 10px;
+  margin-right: 1rem;
+  max-width: 66px;
+  max-height: 66px;
+  border-radius: 50%;
+  background-color: var(--color-basic-2);
+  user-select: none;
+  font-size: 1em;
+}
+.chip-item__icon {
+  font-size: 2.5em;
+  color: white;
+}
+.chip-item__text {
+  padding: 1rem;
+  font-family: "Open sans 600 italic", sans-serif;
+}
+.chip-item__main-text {
+  font-family: "Open sans 700 italic", sans-serif;
+  font-size: 1.1em;
+}
+@media screen and (max-width: 1280px) {
+  .chip-item {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .chip-item {
+    font-size: 1.3rem;
+  }
+  .chip-item__icon-container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chip-item {
+    font-size: 1.8rem;
+  }
+}

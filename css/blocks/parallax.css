@@ -1,0 +1,34 @@
+.parallax {
+  position: relative;
+  z-index: 5;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.parallax_cute {
+  background-image: url(../../fonts/parallax/parallax-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25%;
+}
+.parallax__mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+.parallax__mask_special-1 {
+  background-color: var(--color-basic-1_special-2);
+}
+.parallax__main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  display: flex;
+  padding-top: var(--header-height);
+  padding-bottom: 2rem;
+}
