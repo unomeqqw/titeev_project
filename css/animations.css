@@ -9,3 +9,128 @@
     transform: rotate(-5deg);
     }
 }
+
+.anim-no-opacity {
+  opacity: 0;
+}
+.interior {
+  background-color: var(--color-basic-4);
+}
+
+.collage {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "box1 box1 box2"
+    "box3 box4 box4";
+}
+.collage__view-box {
+  grid-area: box1;
+}
+.collage__view-text {
+  font-size: 1.3rem;
+}
+.collage__view-textbox {
+  background-color: rgb(255, 239, 202);
+}
+.collage__alt-textbox {
+  grid-area: box3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-basic-2);
+}
+.collage__alt-text {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.collage__alt-textbox {
+  grid-area: box3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-basic-2);
+}
+.collage__alt-text {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.collage__collage-items-list {
+  grid-area: box4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.collage-item {
+  overflow: hidden;
+  border-radius: 20px;
+  border-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  transition: 0.3s all ease;
+}
+.collage-item_active {
+  border-color: var(--color-basic-1);
+  opacity: 0.7;
+}
+.collage-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.3s opacity ease;
+}
+.collage-item__img_touchable {
+  transition: 0.3s transform ease;
+}
+.collage-item__img_touchable:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.collage-item__text {
+  padding: 1rem;
+  opacity: 1;
+  font-family: 'Open Sans 600', sans-serif;
+  transition: 0.3s opacity ease;
+}
+.collage-item__br {
+}
+
+@media screen and (max-width: 1000px) {
+  .collage {
+    grid-template-rows: 40vw auto auto;
+    grid-template-areas:
+      "box1 box1 box1"
+      "box2 box2 box2"
+      "box3 box4 box4";
+  }
+  .collage__view-text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .collage {
+    grid-template-rows: 50vw auto auto auto;
+    grid-template-areas:
+      "box1 box1 box1"
+      "box2 box2 box2"
+      "box3 box3 box3"
+      "box4 box4 box4";
+  }
+  .collage-item__br {
+    display: none;
+  }
+  .collage-item__text {
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 1.8rem;
+  }
+  .collage__collage-items-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
