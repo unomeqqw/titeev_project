@@ -1,0 +1,132 @@
+.review-item {
+    width: 100%;
+    max-width: 800px;
+    min-height: 320px;
+    margin-left: 1rem;
+    padding: 1.8rem;
+
+    position: relative;
+    z-index: 3;
+
+    border-radius: 15px;
+    background-color: var(--color-basic-5);
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.review-item_alt {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    opacity: 0;
+    background-color: var(--color-basic-2);
+
+    transition: 0.3s all;
+}
+
+/* animations */
+.review-item:hover .review-item_alt,
+.review-item_alt:hover {
+    z-index: 4;
+    opacity: 1;
+}
+
+.review-item__head {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.review-item__img-container {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}   
+
+.review-item__img {
+    width: 100%;
+    background-color: var(--color-basic-3);
+    object-fit: cover;
+    object-position: center;
+}
+
+.review-item__visitor-info {
+    font-size: 1.1em;
+    font-family: 'Open sans 600', sans-serif;
+}
+
+.review-item__grade-block {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 1.3em;
+    user-select: none;
+}
+
+.review-item__grade-icon {
+    font-size: 2em;
+    color: var(--color-basic-2);
+}
+
+.review-item__grade-icon__alt {
+    color: var(--color-basic-6);
+}
+
+.review-item__grade-value {
+    margin-left: 0.3rem;
+    align-self: flex-start;
+    font-size: 1.5em;
+    font-family: 'Open sans 600', sans-serif;
+}
+
+.review-item__review-text {
+    width: 100%;
+    padding-top: 0.5rem;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 1280px) {
+  .review-item {
+    max-width: 850px;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .review-item {
+    max-width: 65vw;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review-item {
+    font-size: 1.5rem;
+  }
+  .review-item__img-container {
+    width: 40px;
+    height: 40px;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .review-item {
+    max-width: 270px;
+    font-size: 1.8rem;
+  }
+}

@@ -1,2 +1,60 @@
 .reviews {
+    background-color: var(--color-basic-3);
+}
+.reviews__slider {
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 14;
+    border-left: 3px solid var(--color-basic-1);
+    border-right: 3px solid var(--color-basic-1);
+    border-radius: 15px;
+}
+.reviews__sliderLine {
+    display: flex;
+    flex-shrink: 0;
+    transition: 1.1s ease all;
+}
+.reviews__button {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    z-index: 15;
+    transform: translateY(-50%);
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+    color: var(--color-basic-1);
+    transition: 0.3s all;
+}
+/* animation */
+.reviews__button:active,
+.reviews__button:focus,
+.reviews__button:hover {
+    background-color: var(--color-basic-1);
+    color: white;
+}
+.reviews__button_prev {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.reviews__button_next {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.reviews__button-icon {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
