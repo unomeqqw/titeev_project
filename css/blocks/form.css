@@ -1,0 +1,109 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background-color: var(--color-basic-1);
+}
+
+.form__button {
+    padding: 1em 1.3em;
+    border-radius: 15px;
+    border: 2px solid var(--color-basic-3);
+    background-color: var(--color-basic-3);
+    color: var(--color-basic-1);
+    font-size: 1.3em;
+    font-family: 'Open sans 700', sans-serif;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.form__button:hover,
+.form__button:focus {
+    background-color: white;
+    border-color: white;
+    color: var(--color-basic-1);
+}
+
+/* если форма не валидна: */
+.form:invalid .form__button {
+    background-color: var(--color-basic-3_special-1);
+    border-color: var(--color-basic-3_special-1);
+    color: var(--color-basic-1_special-1);
+    user-select: none;
+    pointer-events: none;
+}
+
+.input-box {
+    width: 250px;
+    margin-bottom: 1.5em;
+    position: relative;
+    font-size: 1.3em;
+    transition: 0.3s all;
+}
+
+.input-box__label {
+    position: absolute;
+    left: 0;
+    padding: 0 1rem;
+    background-color: var(--color-basic-1);
+    color: var(--color-basic-3_special-1);
+    font-size: 0.7em;
+    font-family: 'Open sans 600', sans-serif;
+    transform: translate(1rem, -0.7rem);
+    transition: 0.3s all;
+}
+
+.input-box__input {
+    width: 100%;
+    padding: 1em 1.3em;
+    border: 2px solid var(--color-basic-3_special-1);
+    border-radius: 15px;
+    outline: none;
+    font-size: 1em;
+    background-color: var(--color-basic-1);
+    transition: 0.3s all;
+}
+
+.input-box__input:hover,
+.input-box__input:focus {
+    border-color: white;
+    color: white;
+}
+
+.input-box__input:hover + .input-box__label,
+.input-box__input:focus + .input-box__label {
+    color: white;
+}
+
+/* поле валидно */
+.input-box__input:valid,
+.input-box__input:valid:hover,
+.input-box__input:valid:focus {
+    border-color: var(--color-basic-3);
+    color: var(--color-basic-3);
+}
+
+.input-box__input:valid:hover + .input-box__label,
+.input-box__input:valid:focus + .input-box__label {
+    color: var(--color-basic-3);
+}
+
+/* ---------------media--------------- */
+@media screen and (max-width: 1280px) {
+    .form {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .form {
+        font-size: 1.7rem;
+    }
+}

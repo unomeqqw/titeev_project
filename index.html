@@ -126,7 +126,7 @@
                 <div class="chip-item">
                     <div class="chip-item__icon-container">
                         <span class="chip-item__icon material-symbols-outlined">cake</span>
-                </div>
+                    </div>
                 <p class="chip-item__text">
                     <span class="chip-item__main-text">Ваш праздник – наш праздник!</span>
                     <br>
@@ -195,6 +195,7 @@
                 <div class="main__section-block reviews__slider">
                     <div class="js-reviews__sliderLine reviews__sliderLine">
                     </div>
+
                     <button class="js-slider-btn-prev reviews__button reviews__button_prev shadow-out" type="button">
                         <span class="reviews__button-icon material-symbols-outlined">line_start_arrow_notch</span>
                     </button>
@@ -203,8 +204,7 @@
                         <span class="reviews__button-icon material-symbols-outlined">line_end_arrow_notch</span>
                     </button>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <!-- reservation -->
         <section id="reservation" class="main__section reservation">
@@ -214,7 +214,40 @@
                     <p class="main__section-text">Вы ведь уже очарованы нашим рестораном...<br>Назад пути нет</p>
                 </header>
                 <!-- block -->
-                <div class="main__section-block">
+                <div class="main__section-block reservation__block">
+                    <form class="form" name="reservationForm" method="POST" action="https://formspree.io/f/mgvjaopq">
+                <div class="input-box">
+                    <input id="formFIO" class="input-box__input"
+                        type="text" name="formFIO"
+                        placeholder="Только буквы"
+                        pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+                        minlength="2"
+                        required>
+                    <label for="formFIO" class="input-box__label">ФИО</label>
+                </div>
+                <div class="input-box">
+                    <input id="formDate" class="input-box__input"
+                        type="date" name="formDate" required>
+                    <label for="formDate" class="input-box__label">Дата</label>
+                </div>
+                <div class="input-box">
+                    <input id="formPlaces" class="input-box__input"
+                        type="number" name="formPlaces"
+                        placeholder="От 1 до 4"
+                        min="1" max="4"
+                        minlength="1" required>
+                    <label for="formPlaces" class="input-box__label">Кол-во мест</label>
+                </div>
+                <div class="input-box">
+                    <input id="formTel" class="input-box__input"
+                        type="tel" name="formTel"
+                        placeholder="8(XXX)-XXX-XX-XX"
+                        pattern="8\([0-9]{3}\)-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        required>
+                    <label for="formTel" class="input-box__label">Телефон</label>
+                </div>
+                <button class="form__button" type="submit">Забронировать</button>
+                </form>
                 </div>
             </div>
         </section>

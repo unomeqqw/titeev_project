@@ -25,7 +25,8 @@
 @import "blocks/menu-item.css";
 @import "blocks/parallax.css";
 @import "blocks/chip-item.css";
+@import 'blocks/collage.css';
 
 @import "blocks/review-item.css";
 
-@import 'blocks/collage.css';
+@import "blocks/form.css";
