@@ -19,6 +19,7 @@
     <script src="js/header.js" defer></script>
     <script src="js/slider-reviews.js" defer></script>
     <script src="js/collage.js" defer></script>
+    <script src="js/cover.js" defer></script>
 </head>
 <body class="body">
     <header class="js-body__header body__header header shadow-out">
@@ -76,8 +77,33 @@
     
     <main class="body__main main">
         <!-- cover -->
-        <section id="cover" class="main__section cover">
-            <div class="main__section-container container">
+        <section id="cover" class="main__section cover parallax parallax_cover">
+            <div class="parallax__mask parallax__mask_cover"></div>
+            <div class="parallax__main">
+                <div class="main__section-container container">
+                    <div class="cover__content">
+                        <h1 class="cover__slogan">Добро пожаловать в Сытый Марио – где пицца оживает!</h1>
+                        <button class="cover__button" id="bookTableBtn">Забронировать столик</button>
+                        <div class="cover__promotions">
+                            <div class="promotions__slider">
+                                <div class="promotions__slide active">
+                                    <h3>Скидка 20% на пиццу по понедельникам!</h3>
+                                    <p>Приходите с друзьями и наслаждайтесь вкусом.</p>
+                                </div>
+                                <div class="promotions__slide">
+                                    <h3>Бесплатный напиток при заказе от 1000 руб!</h3>
+                                    <p>Выберите любой напиток из меню.</p>
+                                </div>
+                                <div class="promotions__slide">
+                                    <h3>Детское меню со скидкой 30%!</h3>
+                                    <p>Для детей до 12 лет.</p>
+                                </div>
+                            </div>
+                            <button class="promotions__prev"><</button>
+                            <button class="promotions__next">></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -246,11 +272,22 @@
                         required>
                     <label for="formTel" class="input-box__label">Телефон</label>
                 </div>
-                <button class="form__button" type="submit">Забронировать</button>
+                <input type="hidden" id="clicksField" name="clicks" value="0">
+                <button class="form__button" type="submit" id="submitBtn">Забронировать</button>
                 </form>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Кликер-пицца -->
+    <div class="pizza-clicker">
+        <div class="clicker__tab" id="clickerTab">🍕 Кликни!</div>
+        <div class="clicker__content" id="clickerContent">
+            <div class="clicker__pizza" id="pizzaImg">🍕</div>
+            <div class="clicker__counter">Кликов: <span id="clickCount">0</span></div>
+            <button class="clicker__close" id="closeClicker">Закрыть</button>
+        </div>
+    </div>
 </body>
 </html>

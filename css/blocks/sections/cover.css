@@ -1,2 +1,201 @@
 .cover {
+    min-height: 100vh;
+}
+
+.parallax_cover {
+    background-image: url(../../../img/parallax/parallax-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax__mask_cover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.cover__slogan {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cover__button {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cover__button:hover {
+    background-color: var(--color-accent-hover, darken(var(--color-accent), 10%));
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.cover__button:active {
+    transform: scale(0.95);
+}
+
+.cover__promotions {
+    margin-top: 3rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.promotions__slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 1rem;
+    min-height: 100px;
+}
+
+.promotions__slide {
+    display: none;
+    text-align: center;
+}
+
+.promotions__slide.active {
+    display: block;
+}
+
+.promotions__slide h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.promotions__slide p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.promotions__prev,
+.promotions__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.promotions__prev {
+    left: 10px;
+}
+
+.promotions__next {
+    right: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .cover__slogan {
+        font-size: 2rem;
+    }
+
+    .cover__button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cover__slogan {
+        font-size: 1.5rem;
+    }
+
+    .cover__button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Кликер-пицца */
+.pizza-clicker {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.clicker__tab {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.clicker__tab:hover {
+    background-color: var(--color-accent-hover, darken(var(--color-accent), 10%));
+}
+
+.clicker__content {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.clicker__content.active {
+    display: block;
+}
+
+.clicker__pizza {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.clicker__pizza:active {
+    transform: scale(0.9);
+}
+
+.clicker__counter {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.clicker__close {
+    background-color: #ccc;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.clicker__close:hover {
+    background-color: #bbb;
 }
